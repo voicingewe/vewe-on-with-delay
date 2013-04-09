@@ -1,23 +1,24 @@
 /* 
-bindWithDelay jQuery plugin
+onWithDelay jQuery plugin
 Author: Brian Grinstead
+Modified: James Diss
 MIT license: http://www.opensource.org/licenses/mit-license.php
 
 http://github.com/bgrins/bindWithDelay
 http://briangrinstead.com/files/bindWithDelay
 
 Usage: 
-	See http://api.jquery.com/bind/
-	.bindWithDelay( eventType, [ eventData ], handler(eventObject), timeout, throttle )
+	See http://api.jquery.com/on/
+	.onWithDelay( eventType, [ eventData ], handler(eventObject), timeout, throttle )
 
 Examples:
-	$("#foo").bindWithDelay("click", function(e) { }, 100);
-	$(window).bindWithDelay("resize", { optional: "eventData" }, callback, 1000);
-	$(window).bindWithDelay("resize", callback, 1000, true);
+	$("#foo").onWithDelay("click", function(e) { }, 100);
+	$(window).onWithDelay("resize", { optional: "eventData" }, callback, 1000);
+	$(window).onWithDelay("resize", callback, 1000, true);
 */
 
 (function($) {
-$.fn.bindWithDelay = function( type, data, fn, timeout, throttle ) {
+$.fn.onWithDelay = function( type, data, fn, timeout, throttle ) {
 	
 	if ( $.isFunction( data ) ) {
 		throttle = timeout;
@@ -48,7 +49,7 @@ $.fn.bindWithDelay = function( type, data, fn, timeout, throttle ) {
         
         cb.guid = fn.guid;
         
-        $(this).bind(type, data, cb);
+        $(this).on(type, data, cb);
 	});
 	
 	

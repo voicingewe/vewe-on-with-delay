@@ -1,9 +1,12 @@
 onWithDelay jQuery plugin
 Author: Brian Grinstead
+Modified: James Diss
 MIT license: http://www.opensource.org/licenses/mit-license.php
 
 http://github.com/bgrins/bindWithDelay
 http://briangrinstead.com/files/bindWithDelay
+
+Modified to use .on rather than .bind for 1.6+ JQuery
 
 Usage: 
 	See http://api.jquery.com/on/

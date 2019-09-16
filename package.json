@@ -1,0 +1,35 @@
+{
+  "name": "vewe-on-with-delay",
+  "version": "1.0.0",
+  "description": "jQuery .on() plugin that adds a exposable delay hook",
+  "main": "src/veweOnWithDelay.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://voicingewe@github.com/voicingewe/vewe-on-with-delay.git"
+  },
+  "keywords": [
+    "jQuery",
+    "bindWithDelay",
+    "onWithDelay"
+  ],
+  "author": "Javier Solis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voicingewe/vewe-on-with-delay/issues"
+  },
+  "homepage": "https://github.com/voicingewe/vewe-on-with-delay#readme",
+  "dependencies": {
+    "jquery": ">=3.4.1"
+  },
+  "devDependencies": {
+    "terser-webpack-plugin": "^2.0.1",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8"
+  },
+  "scripts": {
+    "prod": "webpack --config webpack.config.js"
+  }
+}

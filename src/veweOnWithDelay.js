@@ -1,24 +1,23 @@
-/* 
-onWithDelay jQuery plugin
-Author: Brian Grinstead
-Modified: James Diss
-MIT license: http://www.opensource.org/licenses/mit-license.php
-
-http://github.com/bgrins/bindWithDelay
-http://briangrinstead.com/files/bindWithDelay
-
-Usage: 
-	See http://api.jquery.com/on/
-	.onWithDelay( eventType, [ eventData ], handler(eventObject), timeout, throttle )
-
-Examples:
-	$("#foo").onWithDelay("click", function(e) { }, 100);
-	$(window).onWithDelay("resize", { optional: "eventData" }, callback, 1000);
-	$(window).onWithDelay("resize", callback, 1000, true);
+/**
+ * veweOnWithDelay jQuery plugin
+ * Author: Brian Grinstead
+ * Modified: James Diss
+ * Modified: Javier Solis
+ * MIT license: http://www.opensource.org/licenses/mit-license.php
+ * http://github.com/bgrins/bindWithDelay
+ * http://briangrinstead.com/files/bindWithDelay
+ * Usage: 
+ *	See http://api.jquery.com/on/
+ *	.veweOnWithDelay( eventType, [ eventData ], handler(eventObject), timeout, throttle )
+ *
+ * Examples:
+ * 	$("#foo").veweOnWithDelay("click", function(e) { }, 100);
+ * 	$(window).veweOnWithDelay("resize", { optional: "eventData" }, callback, 1000);
+ *	$(window).veweOnWithDelay("resize", callback, 1000, true);
 */
 
 (function($) {
-$.fn.onWithDelay = function( type, data, fn, timeout, throttle ) {
+$.fn.veweOnWithDelay = function( type, data, fn, timeout, throttle ) {
 	
 	if ( $.isFunction( data ) ) {
 		throttle = timeout;
